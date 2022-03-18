@@ -27,7 +27,7 @@ Daftar berhasil!
 simpan/bintangi pesan ini karena SN (Serial Number) digunaan untuk daftar ulang
 `.trim())
 }
-handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
+handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <AryBotz>.<14>')
 handler.tags = ['xp']
 
 handler.command = /^(daftar|reg(ister)?)$/i
