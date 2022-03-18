@@ -245,8 +245,8 @@ _____•••••••••
                                     "rowId": ".donasi"
                                 }, {
                                     "title":      "|❗| ❯╾Infoowner╼-",
-                                    "description": "indentitas owner zifabotz.",
-                                    "rowId": ".inforozi"
+                                    "description": "indentitas owner Arybotz.",
+                                    "rowId": ".infoary"
                                 }, {
                                     "title": "|💵|  ❯╾Sewa bot╼-",
                                     "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium.",
@@ -378,15 +378,15 @@ _____•••••••••
                                 "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
                             }, {
                                 "rows": [{
-                                    "title": "|👩‍💻| Owner ZIFABOTZ",
-                                    "description": "pemilik ZIFABOTZ",
+                                    "title": "|👩‍💻| OwnerARYBOTZ",
+                                    "description": "pemilik ARYBOTZ",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "|🛠|Status bot",
                                     "description": "Status dan informasi bot",
                                     "rowId": ".botstatus"
                                 }, {
-                                    "title": "|🖨️| Rules zifabotz",
+                                    "title": "|🖨️| Rules ARYBOTZ",
                                     "description": "Mari menaati peraturan demi Kita bersama",
                                     "rowId": ".rules"
                                 }, {
