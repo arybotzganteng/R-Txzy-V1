@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 
     m.reply(`
 ╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪STATUS ZIFABOTZ⳹ ❋ཻུ۪۪ 〕 ❉────── 
+║╭──❉ 〔 ⳹ ❋ཻུ۪۪STATUS ARYBOTZ⳹ ❋ཻུ۪۪ 〕 ❉────── 
 ║│➸ Aktif selama ${uptime}
 ║│➸ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ║│➸ *${groups.length}* Grup
@@ -23,7 +23,7 @@ let handler = async (m, { conn }) => {
 _____•••••••••
 
 ╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪PERATURAN ZIFABOTZ⳹ ❋ཻུ۪۪ 〕 ❉────── 
+║╭──❉ 〔 ⳹ ❋ཻུ۪۪PERATURAN ARYBOTZ⳹ ❋ཻུ۪۪ 〕 ❉────── 
 ║│➸ ${anon ? '✅' : '❌'} *Anon Chat*
 ║│➸ ${anticall ? '✅' : '❌'} *Anti Call*
 ║│➸ ${antispam ? '✅' : '❌'} *Anti Spam*
