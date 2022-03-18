@@ -1,10 +1,10 @@
 <div align="center">
-<img src="https://telegra.ph/file/4637101da58e21976363b.jpg" alt="AlyaaXzy X BOTCAHï¿½" width="300" />
+<img src="https://telegra.ph/file/4637101da58e21976363b.jpg" alt="MursidGanteng X BOTCAHï¿½" width="300" />
 
 </p>
 <h1 align="center">AlyaaXzy X BOTCAH™</h1>
 
-<h1 align="center">Jangan lupa kasih stars & follow :)</h1>
+<h1 align="center">Follow Ig mursid.st, lu recode sendiri aja males gua :)</h1>
 
 >
 >
@@ -20,7 +20,7 @@
 </h4>
 </p>
 
-## CARA INSTALL DI TERMUX
+## CARA INSTALL DI TERMUX DOWNLOAD TERMUX DI bit.ly/termuxmursid25
 ```bash
 > termux-setup-storage
 > pkg update && pkg upgrade
@@ -39,9 +39,16 @@
 > cd R-Txyz-Botz
 > npm i
 > node run.js
+
+
+
+# INSTALL ULANG JIKA MAU SCAN ULANG
+> cd R-Txyz-Botz
+> rm -rf session.data.json
+> npm start
 ```
 
-# Run On Heroku
+# Run On Heroku JANGAN DI TERMUX
 
 Simple WhatsApp Bot
 
