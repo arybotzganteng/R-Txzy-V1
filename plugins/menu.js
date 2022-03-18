@@ -229,13 +229,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ║│➸*${conn.blocklist.length}* Terblock
 ║│➸*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ║│➸*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+ Follow TikTok Ownerku
+https://vt.tiktok.com/ZSdRU4eqc/
+Makasih >.<
 ╰─────────❉
 _____••••••••• 
 (_𝙱𝚎𝚋𝚎𝚛𝚊𝚙𝚊 𝚋𝚞𝚝𝚝𝚘𝚗 𝚊𝚍𝚊 𝚢𝚐 𝚐𝚊𝚔 𝚋𝚎𝚛𝚏𝚞𝚗𝚐𝚜𝚒_)
 
 ▌│█║▌║▌║║▌║▌║█│▌ `.trim(),
                         "footerText": "⳹ ❋ཻུ۪۪⸙*AryBotz*⳹ ❋ཻུ۪۪⸙ by.Ary",
-                        "buttonText": "««TAMPILAN MENU ARYBOTZ««",
+                        "buttonText": "««MENU ARYBOTZ««",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
