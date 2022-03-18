@@ -3,9 +3,19 @@ let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&s
 let botol = global.botwm
 let str = `
 ✧─────[ *Group Official* ]─────✧
-ZIFABOTZ :
+*ZIFABOTZ* :
 https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv
 ✧──────────···──────────✧
+
+✧─────[ *Group Official* ]─────✧
+ *Group Bot Whatsappp* ¹ :
+https://chat.whatsapp.com/EheAWPrQMhV25xW0N7l7WD
+✧──────────···──────────✧
+✧─────[ *Group Official* ]─────✧
+ *Group Bot Whatsappp* ² : https://chat.whatsapp.com/GzDQlgoUamS5Ok4EOcYRRB
+
+✧──────────···──────────✧
+
 `.trim()
 conn.sendButton(m.chat, str, `${botol}`, `⋮☰ Menu`, `.menu`, m)
 }
