@@ -25,7 +25,7 @@ let handler = async (m, { conn }) => await conn.send2Button(m.chat, `
 │ 9 & 10 = Block permanent
 ┬
 ╰──────────···
-Zifabotz
+©AryBotz
 `.trim(), 'Harap patuhin peraturan tersebut', '⋮☰ Menu', '.menu', 'Owner', '.owner', m)
 
 handler.help = ['rules']
