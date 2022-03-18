@@ -32,12 +32,11 @@ handler.all = async function (m, { isBlocked }) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, logo, `
 ╭━━〔 List Sewa〕━✧
-│⬦ *1 Bulan* :      *Rp 15.000*
-│⬦ *4 bulan* :      *Rp 20.000*
-│⬦ *8 bulan* :      *Rp 35.000*
+│⬦ *1 Bulan* :      *RM 5.00*
+│⬦ *4 bulan* :      *RM 10.00*
+│⬦ *8 bulan* :      *RM 20.00*
 ┝━━〔Payment〕━✧
-│⬦ Dana
-│⬦ Gopay
+│⬦ Maxis 
 │⬦ Pulsa
 ╰━━━✧
 Note: Syarat dan Ketentuan mungkin berlaku`.trim(), wm, 'Menu', '#menu', 'Owner', '#owner', m)
@@ -70,7 +69,7 @@ Note: Syarat dan Ketentuan mungkin berlaku`.trim(), wm, 'Menu', '#menu', 'Owner'
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Im zifabotz 🤖 || ⏰ Aktif selama ${uptime} |(*delay*🌕)| 👥 User : ${Object.keys(global.db.data.users).length} User || 🎐 Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik by.rozi'}`).catch(_ => _)
+        await this.setStatus(`Im AryBotz 🤖 || ⏰ Aktif selama ${uptime} |(*delay*🌕)| 👥 User : ${Object.keys(global.db.data.users).length} User || 🎐 Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik by.Ary'}`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
