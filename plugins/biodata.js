@@ -1,62 +1,80 @@
 const { MessageType } = require('@adiwajshing/baileys')
-let fetch = require('node-fetch')
-let fs = require('fs')
-let handler = async (m, { conn, text }) => {
-let logo = global.logoowner
-  let ext= `
-*───────[ BIODATA OWNER ]───────*
-*💌 Nama* : NoelDaniel
-*🎨 Umur* : 14
-*📈 Status* : Busy
+const PhoneNumber = require('awesome-phonenumber')
+async function handler(m) {
+  let name = 'CREATOR ARYBOTZ🇷🇺'
+  number = owner[0].replace(/[^0-9]/g, '')
+  let njid = number + '@s.whatsapp.net'
+  let onW = await this.isOnWhatsApp(njid) || { isBusiness: false }
 
-*───────[ SOSIAL MEDIA ]───────*
-*📷 instagran* : none
-*🇫  Facebook* : none
-*🏮 Chanel Youtube* : none
-`
-let name = await conn.getName(m.sender)
+  let name2 = ' CREATOR ARYBOTZ🇷🇺'
+  number2 = owner[1].replace(/[^0-9]/g, '')
+  let njid2 = number2 + '@s.whatsapp.net'
+  let onW2 = await this.isOnWhatsApp(njid2) || { isBusiness: false }
 
-let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+  let name3 = 'CREATOR ARYBOTZ🇷🇺'
+  number3 = owner[2].replace(/[^0-9]/g, '')
+  let njid3 = number3 + '@s.whatsapp.net'
+  let onW3 = await this.isOnWhatsApp(njid3) || { isBusiness: false }
 
-  sumberImg = fs.readFileSync(`./src/owner.jpg`)
-  image = (await conn.prepareMessage('0@s.whatsapp.net', sumberImg, MessageType.image, { thumbnail: Buffer.alloc(0) })).message.imageMessage
-  res = await conn.prepareMessageFromContent(m.chat, {
-    "productMessage": {
-      "product": {
-        "productImage": image,
-        "productId": "4938174216214248",
-        "title": "───────[ OWNER ]───────",
-        "description": '\n\n' + ext,
-        "retailerId": "Itu Owner ku ya ^~^",
-        "url": '',
-        "descriptionCount": "999999999",
-        "productImageCount": "1",
-      },
-      "businessOwnerJid": "60147751029@s.whatsapp.net",
-      "contextInfo": {
-        "forwardingScore": 9999,
-        "isForwarded": false
-      }
-    }
-  },
-    { quoted: fkon })
-  conn.relayWAMessage(res)
-
+let name4 = 'CREATOR ARYBOTZ🇷🇺'
+  number4 = owner[3].replace(/[^0-9]/g, '')
+  let njid4 = number4 + '@s.whatsapp.net'
+  let onW4 = await this.isOnWhatsApp(njid4) || { isBusiness: false }
+  this.send2Button(m.chat, `*Ngapain cari owner??*\n\nMau donasi/sewa bot ya:v.\nDi harapkan tidak menelpon/menyepam no owner.`, name4, 'Menu', '.menu', 'Profile', '.profile', m)
+  this.sendMessage(m.chat, {
+    contacts: [{
+      displayname: name, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name.replace(/\n/g, '\\n')};;;
+FN:${name.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number}:${PhoneNumber('+' + number).getNumber('international')}${onW.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid].vname || this.getName(njid)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }, {
+      displayname: name2, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name2.replace(/\n/g, '\\n')};;;
+FN:${name2.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number2}:${PhoneNumber('+' + number2).getNumber('international')}${onW2.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid2].vname || this.getName(njid2)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid2)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }, {displayname: name3, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name3.replace(/\n/g, '\\n')};;;
+FN:${name3.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number3}:${PhoneNumber('+' + number3).getNumber('international')}${onW3.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid3].vname || this.getName(njid3)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid3)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }, {
+      displayname: name4, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name4.replace(/\n/g, '\\n')};;;
+FN:${name4.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number4}:${PhoneNumber('+' + number4).getNumber('international')}${onW4.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid4].vname || this.getName(njid4)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid4)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }]
+  }, MessageType.contactsArray, { quoted: m })
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
+
 handler.command = /^(owner|creator)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
 
 module.exports = handler
-
-let wm = global.botwm
