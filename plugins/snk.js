@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => await conn.send2Button(m.chat, `
-╭─────[ *RULES* ]─────✧
+╭──[ *RULES ARYBOTZ* ]────✧
 ┴
 │¹ Dilarang Hina Arybotz / Owner
 │² Dilarang Spam Command
