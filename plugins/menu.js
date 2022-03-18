@@ -251,6 +251,10 @@ _____•••••••••
                                     "description": "indentitas owner Arybotz.",
                                     "rowId": ".infoary"
                                 }, {
+                                    "title":      "|🙇‍♂️| ❯╾List Group ╼-",
+                                    "description": "Bergabung Di Group Official Bot.",
+                                    "rowId": ".gcbot
+                                }, {
                                     "title": "|💵|  ❯╾Sewa bot╼-",
                                     "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium.",
                                     "rowId": ".sewa"
