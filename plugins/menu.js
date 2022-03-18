@@ -251,6 +251,10 @@ _____•••••••••
                                     "description": "indentitas anda.",
                                     "rowId": ".profile"
                                 }, {
+title":  "|🙇‍♂️| ❯Jadibot AryBotz╼-",
+                                    "description": "Bergabung Bersama AryBotz.",
+                                    "rowId": ".jadibot
+                                }, {
 "title":  "|🙇‍♂️| ❯List Group Bot╼-",
                                     "description": "Bergabung Ke Group Official Bot",
                                     "rowId": ".gcbot"
