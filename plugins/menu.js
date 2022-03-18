@@ -259,7 +259,7 @@ _____•••••••••
                             }, {
                                 "rows": [{
                                     "title": `|🧾| Semua Perintah`,
-                                    "description": "Memberikan Semua Fitur Bot",
+                                    "description": "Memberikan Semua Fitur AryBotz",
                                     "rowId": ".? all",
                                 }, { 
                                     "title": "|🕋|─────「1」",
@@ -318,7 +318,7 @@ _____•••••••••
                                     "description": "Menu Group",
                                     "rowId": ".? grup"
                                 }, { 
-                                    "title": "|🔝|─────「15」",
+                                    "title": "|🌟|─────「15」",
                                     "description": "Menu Untuk Premium",
                                     "rowId": ".? premium"
                                 }, { 
@@ -335,11 +335,11 @@ _____•••••••••
                                     "rowId": ".? nulis"
                                 }, { 
                                     "title": "|📺|─────「19」",
-                                    "description": "Download Sesuatu Di Bot",
+                                    "description": "Download Sesuatu Di AryBotz",
                                     "rowId": ".? downloader"
                                 }, { 
                                     "title": "|🔧|─────「20」",
-                                    "description": "Tools Yang Bisa di Gunakan Di Bot",
+                                    "description": "Tools Yang Bisa di Gunakan Di AryBotz",
                                     "rowId": ".? tools"
                                 }, { 
                                     "title": "|🎇|─────「21」",
@@ -347,7 +347,7 @@ _____•••••••••
                                     "rowId": ".? fun"
                                 }, { 
                                     "title": "|📂|─────「22」",
-                                    "description": "Simpan Sesuatu Di Bot",
+                                    "description": "Simpan Sesuatu Di AryBotz",
                                     "rowId": ".? database"
                                 }, { 
                                     "title": "|📝|─────「23」",
@@ -363,11 +363,11 @@ _____•••••••••
                                     "rowId": ".? jadibot"
                                 }, { 
                                     "title": "|⛩️|─────「26」",
-                                    "description": "Cari Anime Di Bot",
+                                    "description": "Cari Anime Di AryBotz",
                                     "rowId": ".? anime"
                                 }, { 
                                     "title": "|ℹ️|─────「27」",
-                                    "description": "Info Tentang Bot",
+                                    "description": "Info Tentang AryBotz",
                                     "rowId": ".? info"
                                 }, { 
                                     "title": "|─|─────「28」",
