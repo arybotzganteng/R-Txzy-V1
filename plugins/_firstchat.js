@@ -17,7 +17,7 @@ handler.all = async function (m) {
 *Hi ${name}, ${ucapan()}*
 ───⬡ 〔 𝐁𝐎𝐓z 𝐂𝐇𝐀𝐓 〕 ⬡────
 ╭───────────────╮
-        My name *ZIFABOTZ*
+        My name *ARYBOTZ*
         Salah satu Bot diwhatsapp
 ╰───────────────╯
 Silahkan mematuhi Rules Bot
