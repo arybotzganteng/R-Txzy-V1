@@ -325,65 +325,73 @@ _____•••••••••
                                     "title": "|🏢|─────「14」",
                                     "description": "Menu Group",
                                     "rowId": ".? grup"
-                                }, { 
-                                    "title": "|🌟|─────「15」",
+                                }, {
+                                     "title": "|💃|─────「15」",
+                                    "description": "Tagme Ngetag Diri Sendiri",
+                                    "rowId": ".tagme"
+                                }, {
+                                    "title": "|🌟|─────「16」",
                                     "description": "Menu Untuk Premium",
                                     "rowId": ".? premium"
                                 }, { 
-                                    "title": "|🖥️|─────「16」",
+                                    "title": "|🖥️|─────「17」",
                                     "description": "Cari Sesuatu Di Bot",
                                     "rowId": ".? internet"
                                 }, { 
-                                    "title": "|🥷|─────「17」",
+                                    "title": "|🥷|─────「18」",
                                     "description": "Mainkan Anonymous Chat",
                                     "rowId": ".? anonymous"
                                 }, { 
-                                    "title": "|✒️|─────「18」",
+                                    "title": "|✒️|─────「19」",
                                     "description": "Menu Nulis & Logo",
                                     "rowId": ".? nulis"
                                 }, { 
-                                    "title": "|📺|─────「19」",
+                                    "title": "|📺|─────「20」",
                                     "description": "Download Sesuatu Di AryBotz",
                                     "rowId": ".? downloader"
                                 }, { 
-                                    "title": "|🔧|─────「20」",
+                                    "title": "|🔧|─────「21」",
                                     "description": "Tools Yang Bisa di Gunakan Di AryBotz",
                                     "rowId": ".? tools"
                                 }, { 
-                                    "title": "|🎇|─────「21」",
+                                    "title": "|🎇|─────「22」",
                                     "description": "Menu Ceria",
                                     "rowId": ".? fun"
                                 }, { 
-                                    "title": "|📂|─────「22」",
+                                    "title": "|📂|─────「23」",
                                     "description": "Simpan Sesuatu Di AryBotz",
                                     "rowId": ".? database"
                                 }, { 
-                                    "title": "|📝|─────「23」",
+                                    "title": "|📝|─────「24」",
                                     "description": "Menu Vote & Absen",
                                     "rowId": ".? vote"
                                 }, { 
-                                    "title": "|🎙️|─────「24」",
+                                    "title": "|🎙️|─────「25」",
                                     "description": "Ubah Suaramu",
                                     "rowId": ".? audio"
                                 }, { 
-                                    "title": "|🤖|─────「25」",
+                                    "title": "|🤖|─────「26」",
                                     "description": "Jadi Bot",
                                     "rowId": ".? jadibot"
                                 }, { 
-                                    "title": "|⛩️|─────「26」",
+                                    "title": "|⛩️|─────「27」",
                                     "description": "Cari Anime Di AryBotz",
                                     "rowId": ".? anime"
                                 }, { 
-                                    "title": "|ℹ️|─────「27」",
+                                    "title": "|ℹ️|─────「28」",
                                     "description": "Info Tentang AryBotz",
                                     "rowId": ".? info"
                                 }, { 
-                                    "title": "|─|─────「28」",
+                                    "title": "|─|─────「29」",
                                     "description": "",
                                     "rowId": ".? tanpakategori"
+                                }, {
+                                    "title": "|🥵|─────「30」",
+                                    "description": "Info AryBotz Anjay",
+                                    "rowId": ".infoary"
                                 }, { 
-                                    "title": "|👩‍⚖️|─────「29」",
-                                    "description": "Menu Khusu Owner",
+                                    "title": "|👩‍⚖️|─────「31」",
+                                    "description": "Menu Khusus Owner",
                                     "rowId": ".? owner"
                                 }],
                                 "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
