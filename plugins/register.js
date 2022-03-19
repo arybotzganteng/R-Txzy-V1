@@ -148,7 +148,7 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                                          "rowId": ".menu"
                                     }, {
                                          "title": `CODE REGISTER`,
-                                         "description": "Mendapatkan Setiap Number", 
+                                         "description": "Mendapatkan Serial Number", 
                                          "rowId": ".ceksn"
                                     }, {
                                          "title": `PROFILE`,
