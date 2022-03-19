@@ -148,8 +148,8 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                                          "rowId": ".menu"
                                     }, {
                                          "title": `CODE REGISTER`,
-                                         "description": "Bonus Pemula", 
-                                         "rowId": `.codereg ${pickRandom(['070698', '661528', '878588', '775636', '098786'])}`
+                                         "description": "Mendapatkan Setiap Number", 
+                                         "rowId": ".ceksn"
                                     }, {
                                          "title": `PROFILE`,
                                          "description": "Profile Anda!",
