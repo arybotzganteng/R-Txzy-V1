@@ -222,22 +222,22 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
                         "description": `╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪⸙*AryBotz*⳹ ❋ཻུ۪۪ 〕 ❉────── 
-║│➸⏰Aktif selama ${uptime}
-║│➸⚡Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│➸AryBotz Ganteng 
-║│➸*${conn.blocklist.length}* Terblock
-║│➸*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-║│➸*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
- ```Follow TikTok Ownerku```
-https://vt.tiktok.com/ZSdRU4eqc/
-Makasih >.<
+║╭──❉ 〔 *AryBotz* 〕❉────── 
+║│➸ *⏰Aktif selama ${uptime}*
+║│➸ *⚡Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
+║│➸ *AryBotz*  
+║│➸ *${conn.blocklist.length}* ~Terblock~
+║│➸ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* ~Chat Terbanned~ 
+║│➸ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* ~Pengguna Terbanned~
+ Follow TikTok Ownerku
+*https://vt.tiktok.com/ZSdRU4eqc/*
+~Macih >.<~ 
 ╰─────────❉
 _____••••••••• 
 (_𝙱𝚎𝚋𝚎𝚛𝚊𝚙𝚊 𝚋𝚞𝚝𝚝𝚘𝚗 𝚊𝚍𝚊 𝚢𝚐 𝚐𝚊𝚔 𝚋𝚎𝚛𝚏𝚞𝚗𝚐𝚜𝚒_)
 
 ▌│█║▌║▌║║▌║▌║█│▌ `.trim(),
-                        "footerText": "©AryBotz",
+                        "footerText": "⳹ ❋ཻུ۪۪⸙*AryBotz*⳹ ❋ཻུ۪۪⸙ by.Ary",
                         "buttonText": " *TAMPILKAN MENU ARYBOTZ*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
@@ -251,7 +251,7 @@ _____•••••••••
                                     "description": "indentitas anda.",
                                     "rowId": ".profile"
                                 }, {
-"title":  "|🙇‍♂️| ❯Jadibot AryBotz╼-",
+"title":  "|👾| ❯Jadibot AryBotz╼-",
                                     "description": "Bergabung Bersama AryBotz.",
                                     "rowId": ".jadibot"
                                 }, {
