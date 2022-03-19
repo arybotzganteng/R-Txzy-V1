@@ -2,8 +2,9 @@ const { servers, yta, ytv } = require('../lib/y2mate')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `Harap masukkan query!\n\nContoh: ${usedPrefix + command} yanagi nagi one's hope`
+  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} california`
   let chat = global.db.data.chats[m.chat]
+  await m.reply(global.wait)
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
   if (!vid) throw 'Konten Tidak ditemukan'
@@ -26,11 +27,15 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw 'semua server gagal'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
   await conn.send2ButtonLoc(m.chat, await (await fetch(thumb)).buffer(), `
-*Judul:* ${title}
-*Ukuran File Audio:* ${filesizeF}
-*Ukuran File Video:* ${yt2.filesizeF}
-*Server y2mate:* ${usedServer}
-`.trim(), watermark, 'Audio', `.yta ${vid.url}`, 'Video', `.yt ${vid.url}`)
+┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
+┆ *PLAY YOUTUBE*
+└┈┈┈┈┈┈┈┈┈┈┈⌣ ┈̥-̶̯͡..̷̴✽̶⌣ ✽̶
+
+*💌 Judul:* ${title}
+*🎶 Audio:* ${filesizeF}
+*🎥 Video:* ${yt2.filesizeF}
+*💻 Server y2mate:* ${usedServer}
+`.trim(), wm, `Audio (${filesizeF})`, `.yta ${vid.url}`, `Video (${yt2.filesizeF})`, `.yt ${vid.url}`)
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
@@ -39,3 +44,5 @@ handler.command = /^(p|play)$/i
 handler.exp = 0
 
 module.exports = handler
+
+let wm = global.botwm
