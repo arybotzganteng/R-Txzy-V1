@@ -11,6 +11,7 @@ conn.reply(m.chat, `
 │    *https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv*
 │ ✎ _TikTok_ : 
 │  *https://vt.tiktok.com/ZSdRaWNh1/*
+│ ✎ Github : *http://github.com/arybotzganteng*
 │ ✎ _WhatsApp_ :
 │    wa.me/60147751029
 ╰‿‿‿‿‿‿‿‿
