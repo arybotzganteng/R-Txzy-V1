@@ -379,15 +379,15 @@ _____•••••••••
                                     "rowId": ".? anime"
                                 }, { 
                                     "title": "|ℹ️|─────「28」",
-                                    "description": "Info Tentang AryBotz",
+                                    "description": "Info Tentang Bot",
                                     "rowId": ".? info"
                                 }, { 
                                     "title": "|─|─────「29」",
                                     "description": "",
                                     "rowId": ".? tanpakategori"
                                 }, {
-                                    "title": "|🥵|─────「30」",
-                                    "description": "Info AryBotz Anjay",
+                                    "title": "|🛐|─────「30」",
+                                    "description": "Informasi Owner AryBotz",
                                     "rowId": ".infoary"
                                 }, { 
                                     "title": "|👩‍⚖️|─────「31」",
