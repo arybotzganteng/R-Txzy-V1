@@ -413,7 +413,7 @@ module.exports = {
                 externalAdReply: {
                   mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
                   title: action === 'add' ? wel : lea,
-                  body: 'Ary Botz',
+                  body: 'Haruno bot',
                   thumbnail: poi
                 }
               }}) 
