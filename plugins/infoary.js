@@ -6,14 +6,12 @@ conn.reply(m.chat, `
 │ ✎ _Kelas_ : *privasi*
 │ ✎ _Asal_ : *SABAH,MALYSIA*
 │ ✎ Jantina : *Laki*
-│ ✎ Status : *Apaan Lu🗿*
-│ ✎ _Official Grup_ :
-│    *https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv*
-│ ✎ _TikTok_ : 
-│  *https://vt.tiktok.com/ZSdRaWNh1/*
+│ ✎ Status : *Janda Anak 1000*
+│ ✎ _Official Grup_ : *https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv*
+│ ✎ _TikTok_ : *https://vt.tiktok.com/ZSdRaWNh1/*
 │ ✎ Github : *http://github.com/arybotzganteng*
 │ ✎ _WhatsApp_ :
-│    wa.me/60147751029
+│    *wa.me/60147751029*
 ╰‿‿‿‿‿‿‿‿
 `.trim(), m)
 }
