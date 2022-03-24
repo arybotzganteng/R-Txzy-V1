@@ -1,18 +1,22 @@
 let { promisify } = require('util')
 let _gis = require('g-i-s')
 let gis = promisify(_gis)
-let fetch = require('node-fetch')
 
-let handler = async (m, { conn, text, command, usedPrefix }) => {
-  if (!text) throw `Masukkan query sebagai parameter!\n\nContoh: ${usedPrefix + command} tiananmen square 1989`
+let handler  = async (m, { conn, args, text }) => {
+  if (!text) throw 'Cari apa?'
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
-  if (!url) throw `${text} tidak ditemukan!`
-  conn.sendFile(m.chat, url, 'gimage', '', m, 0, { thumbnail: await (await fetch(url)).buffer() })
+  if (!url) throw '404 Not Found'
+  conn.sendFile(m.chat, url, 'gimage', `
+*── 「 GOOGLE IMAGE 」 ──*
+🔎 *Search :* ${text}
+📐 *Size :* ${width} x ${height}
+💻 *Source :* Google
+`.trim(), m)
 }
-handler.help = ['gimage <pencarian>', 'image <pencarian>']
+handler.help = ['gimage <query>', 'image <query>']
 handler.tags = ['internet']
-handler.command = /^(g?image)$/i
+handler.command = /^(gimage|image)$/i
 
 module.exports = handler
 
