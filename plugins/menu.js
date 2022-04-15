@@ -8,31 +8,33 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭═══════════════════════⬣
-║╭──❉ 〔 *NaticsBotz* ❉──────
-║│➸Hai, %name!
-║│➸Tersisa *%limit Limit*
-║│➸Role *%role*
-║│➸Level *%level (%exp / %maxexp)*
-║│➸[%xp4levelup]
-║│➸%totalexp XP secara Total
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TANGGAL⳹ ❋ཻུ۪۪〕 ❉──────
-║│➸Hari: *%week %weton*
-║│➸Tanggal: *%date*
-║│➸WaktuIslam:*%dateIslamic*
-║│➸Waktu: *%time*
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TIME⳹ ❋ཻུ۪۪〕 ❉──────
-║│➸Uptime: *%uptime (%muptime)*
-║│➸Database: %rtotalreg dari %totalreg
-║│➸Memory Used : 
-║│➸${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-╰─────────❉
+┌───〔 %me 〕──⭓
+│
+│*⦁ Hai, %name!
+│*⦁ Tersisa *%limit Limit*
+│*⦁ Role *%role*
+│*⦁ Level *%level (%exp / %maxexp)* [%xp4levelup]
+│*⦁ %totalexp XP secara Total
+│
+│*⦁ Tanggal: *%week %weton, %date*
+│*⦁ Tanggal Islam: *%dateIslamic*
+│*⦁ Waktu: *%time*
+│
+│*⦁ Uptime: *%uptime (%muptime)*
+│*⦁ Database: %rtotalreg dari %totalreg
+│*⦁ GitHub: https://github.com/AlyaaXd
+│*⦁ Github:https://github.com/Nanzz681
+│*⦁ Github:https://github.com/arybotzganteng
+└─────⭓
 %readmore`.trimStart(),
-  header: '*║╭──❉ 〔%category〕*',
-  body: '║│➸%cmd %islimit %isPremium',
-  footer: '*╰───❉*\n',
+  header: '┌──〔 %category 〕─⭓*',        
+  body: '│▸* %cmd %islimit %isPremium',
+  footer: '└────⭓\n',
   after: `
-  ⬣━〔Powered By Natics〕━⬣
+*%np
+
+mname@^%version*
+${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -50,7 +52,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'news': 'News',
     'kerang': 'Kerang Ajaib',
     'quotes': 'Quotes',
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
+    'admin': 'Admin',
     'rpg': 'Epic Rpg',
     'group': 'Grup',
     'anime': 'Anime',
@@ -84,10 +86,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'edukasi') tags = {
     'edukasi': 'Edukasi'
   }
-  if (teks == 'nsfw') tags = {
-    'hentai': 'Hentai',
-    'bokep': 'Bokep'
-  }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
   }
@@ -104,7 +102,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'cristian': 'Cristian'
   }
   if (teks == 'admin') tags = {
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`
+    'admin': 'Admin'
   }
   if (teks == 'grup') tags = {
     'group': 'Grup'
@@ -221,195 +219,160 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `╭═══════════════════════
-║╭──❉ 〔 *AryBotz* 〕❉────── 
-║│➸ *⏰Aktif selama ${uptime}*
-║│➸ *⚡Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
-║│➸ *AryBotz*  
-║│➸ *${conn.blocklist.length}* ~Terblock~
-║│➸ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* ~Chat Terbanned~ 
-║│➸ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* ~Pengguna Terbanned~
- Follow TikTok Ownerku
-*https://vt.tiktok.com/ZSdRU4eqc/*
-~Macih >.<~ 
-╰─────────❉
-_____••••••••• 
-(_𝙱𝚎𝚋𝚎𝚛𝚊𝚙𝚊 𝚋𝚞𝚝𝚝𝚘𝚗 𝚊𝚍𝚊 𝚢𝚐 𝚐𝚊𝚔 𝚋𝚎𝚛𝚏𝚞𝚗𝚐𝚜𝚒_)
-
-▌│█║▌║▌║║▌║▌║█│▌ `.trim(),
-                        "footerText": "⳹ ❋ཻུ۪۪⸙*AryBotz*⳹ ❋ཻུ۪۪⸙ by.Ary",
-                        "buttonText": " *TAMPILKAN MENU ARYBOTZ*",
+                        "description": `© *NaticsBotz*`.trim(),
+                        "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
+                        "buttonText": " *Click Here*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
                                 "rows": [{
-                                    "title":  "|📥| ❯╾Donasi╼-",
-                                    "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
-                                    "rowId": ".donasi"
+                                    "title": "Status Bot",
+                                    "description": "Status dan informasi Bot.",
+                                    "rowId": ".botstatus"
                                 }, {
-                                    "title":      "|📷| ❯╾profile╼-",
-                                    "description": "indentitas anda.",
-                                    "rowId": ".profile"
+                                    "title": "Rules",
+                                    "description": "User yang bijak selalu mematuhi Rules.",
+                                    "rowId": ".rules"
                                 }, {
-"title":  "|👾| ❯Jadibot AryBotz╼-",
-                                    "description": "Bergabung Bersama AryBotz.",
-                                    "rowId": ".jadibot"
-                                }, {
-"title":  "|🙇‍♂️| ❯List Group Bot╼-",
-                                    "description": "Bergabung Ke Group Official Bot",
-                                    "rowId": ".gcbot"
-                                }, {
-                                    "title": "|💵|  ❯╾Sewa bot╼-",
+                                    "title": "Sewa bot - Premium",
                                     "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium.",
                                     "rowId": ".sewa"
                                 }],
                                 "title": "⟣─────────❲ Tentang Bot dan lainnya ❳──────────⟢"
                             }, {
                                 "rows": [{
-                                    "title": `|🧾| Semua Perintah`,
-                                    "description": "Memberikan Semua Fitur AryBotz",
-                                    "rowId": ".? all",
+                                    "title": `[🧾| Semua Perintah`,
+                                    "description": "Memberikan Semua Fitur Bot",
+                                    "rowId": ".? all"
                                 }, { 
-                                    "title": "|🕋|─────「1」",
+                                    "title": "|🕋| Islam",
                                     "description": "Menu Tentang Islam",
                                     "rowId": ".? quran"
                                 }, {
-                                	"title": "|⛪|─────「2」",
+                                    "title": "|⛪| Cristian",
                                     "description": "Menu Tentang Kristen",
                                     "rowId": ".? cristian"
                                 }, {
-                                    "title": "|🏫|─────「3」",
+                                    "title": "|🏫| Edukasi",
                                     "description": "Menu Edukasi",
                                     "rowId": ".? edukasi"
                                 }, { 
-                                    "title": "|📰|─────「4」",
+                                    "title": "|📰| News",
                                     "description": "Menu Berita",
                                     "rowId": ".? News"
                                 }, { 
-                                    "title": "|🎮|─────「5」",
+                                    "title": "|🎮| Game",
                                     "description": "Menu Game",
                                     "rowId": ".? game"
                                 }, { 
-                                    "title": "|🗺️|─────「6」",
+                                    "title": "|🗺️| Epic Rpg",
                                     "description": "Menu Game RPG",
                                     "rowId": ".? rpg"
                                 }, { 
-                                    "title": "|📈|─────「7」",
+                                    "title": "|📈| XP",
                                     "description": "XP Dan Level",
                                     "rowId": ".? xp"
                                 }, { 
-                                    "title": "|🔞|─────「8」",
-                                    "description": "Astarfirullah,Tobat Banh",
-                                    "rowId": ".? nsfw"
-                                }, { 
-                                    "title": "|🖼️|─────「9」",
+                                    "title": "|🖼️| Random Image",
                                     "description": "Menu Foto Random",
                                     "rowId": ".? image"
                                 }, { 
-                                    "title": "|🎇|─────「10」",
+                                    "title": "|🎇| Stiker",
                                     "description": "Menu Buat Stiker",
                                     "rowId": ".? stiker"
                                 }, { 
-                                    "title": "|🐚|─────「11」",
+                                    "title": "|🐚| Kerang Ajaib",
                                     "description": "Menurut Kerang ajaib....",
                                     "rowId": ".? kerangajaib"
                                 }, { 
-                                    "title": "|📑|─────「12」",
+                                    "title": "|📑| Quotes",
                                     "description": "Menu Quotes",
                                     "rowId": ".? quotes"
                                 }, { 
-                                    "title": "|🏛️|─────「13」",
+                                    "title": "|🏛️| Admin",
                                     "description": "Menu Admin Group",
                                     "rowId": ".? admin"
                                 }, { 
-                                    "title": "|🏢|─────「14」",
+                                    "title": "|🏢| Grup",
                                     "description": "Menu Group",
                                     "rowId": ".? grup"
-                                }, {
-                                     "title": "|💃|─────「15」",
-                                    "description": "Tagme Ngetag Diri Sendiri",
-                                    "rowId": ".tagme"
-                                }, {
-                                    "title": "|🌟|─────「16」",
+                                }, { 
+                                    "title": "|🔝| Premium",
                                     "description": "Menu Untuk Premium",
                                     "rowId": ".? premium"
                                 }, { 
-                                    "title": "|🖥️|─────「17」",
+                                    "title": "|🖥️| Internet",
                                     "description": "Cari Sesuatu Di Bot",
                                     "rowId": ".? internet"
                                 }, { 
-                                    "title": "|🥷|─────「18」",
+                                    "title": "|🥷| Anonymous",
                                     "description": "Mainkan Anonymous Chat",
                                     "rowId": ".? anonymous"
                                 }, { 
-                                    "title": "|✒️|─────「19」",
+                                    "title": "|✒️| Nulis & Logo",
                                     "description": "Menu Nulis & Logo",
                                     "rowId": ".? nulis"
                                 }, { 
-                                    "title": "|📺|─────「20」",
-                                    "description": "Download Sesuatu Di AryBotz",
+                                    "title": "|📺| Downloader",
+                                    "description": "Download Sesuatu Di Bot",
                                     "rowId": ".? downloader"
                                 }, { 
-                                    "title": "|🔧|─────「21」",
-                                    "description": "Tools Yang Bisa di Gunakan Di AryBotz",
+                                    "title": "|🔧| Tools",
+                                    "description": "Tools Yang Bisa di Gunakan Di Bot",
                                     "rowId": ".? tools"
                                 }, { 
-                                    "title": "|🎇|─────「22」",
+                                    "title": "|🎇| Fun",
                                     "description": "Menu Ceria",
                                     "rowId": ".? fun"
                                 }, { 
-                                    "title": "|📂|─────「23」",
-                                    "description": "Simpan Sesuatu Di AryBotz",
+                                    "title": "|📂| Database",
+                                    "description": "Simpan Sesuatu Di Bot",
                                     "rowId": ".? database"
                                 }, { 
-                                    "title": "|📝|─────「24」",
+                                    "title": "|📝| Vote & Absen",
                                     "description": "Menu Vote & Absen",
                                     "rowId": ".? vote"
                                 }, { 
-                                    "title": "|🎙️|─────「25」",
+                                    "title": "|🎙️| Pengubah Suara",
                                     "description": "Ubah Suaramu",
                                     "rowId": ".? audio"
                                 }, { 
-                                    "title": "|🤖|─────「26」",
+                                    "title": "|🤖| Jadi Bot",
                                     "description": "Jadi Bot",
                                     "rowId": ".? jadibot"
                                 }, { 
-                                    "title": "|⛩️|─────「27」",
-                                    "description": "Cari Anime Di AryBotz",
+                                    "title": "|⛩️| Anime",
+                                    "description": "Cari Anime Di Bot",
                                     "rowId": ".? anime"
                                 }, { 
-                                    "title": "|ℹ️|─────「28」",
+                                    "title": "|ℹ️| Info",
                                     "description": "Info Tentang Bot",
                                     "rowId": ".? info"
                                 }, { 
-                                    "title": "|─|─────「29」",
+                                    "title": "Tanpa Kategori",
                                     "description": "",
                                     "rowId": ".? tanpakategori"
-                                }, {
-                                    "title": "|🛐|─────「30」",
-                                    "description": "Informasi Owner NaticsBotz",
-                                    "rowId": ".infnatics"
                                 }, { 
-                                    "title": "|👩‍⚖️|─────「31」",
-                                    "description": "Menu Khusus Owner",
+                                    "title": "|🧑‍💻| Owner",
+                                    "description": "Menu Khusu Owner",
                                     "rowId": ".? owner"
                                 }],
                                 "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
                             }, {
                                 "rows": [{
-                                    "title": "|👩‍💻| OwnerNatics",
+                                    "title": "Owner bot",
                                     "description": "pemilik NaticsBotz",
                                     "rowId": ".owner"
                                 }, {
-                                    "title": "|🛠|Status bot",
-                                    "description": "Status dan informasi bot",
-                                    "rowId": ".botstatus"
+                                    "title": "Donasi",
+                                    "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
+                                    "rowId": ".donasi"
                                 }, {
-                                    "title": "|🖨️| Rules ARYBOTZ",
-                                    "description": "Mari menaati peraturan demi Kita bersama",
-                                    "rowId": ".rules"
+                                    "title": "Kata penutup",
+                                    "description": "Terimakasih untuk user yang telah menggunakan bot, jika ada kesalahan atau permintaan bisa chat ke nomor owner\nNote: chat P/main² tidak akan di respon(user bisa terkena banned/block)",
+                                    "rowId": ".creator"
                                 }, {
-                                    "title": "|🙏| Thanks To",
+                                    "title": "Thanks To |🎖️|",
                                     "description": "Terima kasih banyak untuk user yang telah berpartisipasi dalam bot",
                                     "rowId": ".tqto"
                                 }],
@@ -418,7 +381,7 @@ _____•••••••••
                         ], "contextInfo": 
 						{ "stanzaId": m.key.id,
                         "participant": "0@s.whatsapp.net",
-                        "remoteJid": "623136505591-1614953337@g.us",
+                        "remoteJid": "6282130059454-1614953337@g.us",
                         "quotedMessage": m.message
 						}
                     }
@@ -530,24 +493,24 @@ const readMore = more.repeat(1)
 
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 50
-  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 50
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "udah malam tidur gih •>•"
+  res = "Selamat dinihari🌌"
   if (time >= 4) {
-    res = "Selamat pagi hari •>•"
+    res = "Selamat pagi🌅"
   }
   if (time > 10) {
-    res = "Selamat siang hari •>•"
+    res = "Selamat siang🏙️"
   }
   if (time >= 15) {
-    res = "Selamat sore hari •>•"
+    res = "Selamat sore🌇"
   }
   if (time >= 18) {
-    res = "Selamat malam hari •>•"
+    res = "Selamat malam🌃"
   }
   return res
 }
