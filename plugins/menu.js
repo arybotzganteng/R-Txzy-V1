@@ -9,7 +9,7 @@ const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
 ╭═══════════════════════⬣
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙*Arybotz*⳹ ❋ཻུ۪۪〕 ❉──────
+║╭──❉ 〔 *NaticsBotz* ❉──────
 ║│➸Hai, %name!
 ║│➸Tersisa *%limit Limit*
 ║│➸Role *%role*
@@ -32,7 +32,7 @@ const defaultMenu = {
   body: '║│➸%cmd %islimit %isPremium',
   footer: '*╰───❉*\n',
   after: `
-  ⬣━〔Powered By Ary〕━⬣
+  ⬣━〔Powered By Natics〕━⬣
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -387,8 +387,8 @@ _____•••••••••
                                     "rowId": ".? tanpakategori"
                                 }, {
                                     "title": "|🛐|─────「30」",
-                                    "description": "Informasi Owner AryBotz",
-                                    "rowId": ".infoary"
+                                    "description": "Informasi Owner NaticsBotz",
+                                    "rowId": ".infnatics"
                                 }, { 
                                     "title": "|👩‍⚖️|─────「31」",
                                     "description": "Menu Khusus Owner",
@@ -397,8 +397,8 @@ _____•••••••••
                                 "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
                             }, {
                                 "rows": [{
-                                    "title": "|👩‍💻| OwnerARYBOTZ",
-                                    "description": "pemilik ARYBOTZ",
+                                    "title": "|👩‍💻| OwnerNatics",
+                                    "description": "pemilik NaticsBotz",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "|🛠|Status bot",
